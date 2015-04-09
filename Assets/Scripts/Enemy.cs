@@ -50,12 +50,15 @@ public class Enemy : MonoBehaviour
 
 		Destroy (c.gameObject);
 
-		if (hp <= 0) 
-		{
+		if (hp <= 0) {
 			spaceship.Explosion ();
 
 			Destroy (gameObject);
+		} else {
+
+			spaceship.GetAnimator().SetTrigger("Damage");
 		}
+
 	}
 	
 }
