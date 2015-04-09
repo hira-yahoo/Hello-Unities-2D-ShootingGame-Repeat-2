@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 475650}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,7 +23,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 475652}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 475654}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,8 @@ GameObject:
   - 50: {fileID: 5075724}
   - 114: {fileID: 11475722}
   - 114: {fileID: 11475724}
-  m_Layer: 0
+  - 60: {fileID: 6070748}
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,6 +132,25 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!60 &6070748
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187298}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: .112872124, y: .264610529}
+      - {x: -.11032486, y: .264256001}
+      - {x: -.243424177, y: .173325539}
+      - {x: -.243809462, y: -.165714025}
+      - {x: -.131428242, y: -.269840956}
+      - {x: .128730059, y: -.269841194}
+      - {x: .243794441, y: -.162017584}
+      - {x: .24378705, y: .180150747}
 --- !u!95 &9587298
 Animator:
   serializedVersion: 3
@@ -161,6 +181,7 @@ MonoBehaviour:
   shotDelay: .300000012
   bullet: {fileID: 105440, guid: a9077e011d53fc749b406a234254937a, type: 2}
   canShot: 1
+  explosion: {fileID: 141524, guid: 8ed5f3544bce47f42a83dad9681fef48, type: 2}
 --- !u!114 &11475724
 MonoBehaviour:
   m_ObjectHideFlags: 1
